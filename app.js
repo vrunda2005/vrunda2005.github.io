@@ -55,10 +55,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // ----------------------------------------------------
     const typedTextSpan = document.getElementById('typed-text');
     const roles = [
-        "AI Systems Engineer specialized in agentic architectures.",
-        "Full Stack NLP Developer building explainable modeling networks.",
-        "Systems Optimizer creating highly efficient graph analyzers.",
-        "Developer passionate about robust, deterministic backends."
+        "Software Engineer specialized in smart AI tools and backend services.",
+        "Full Stack NLP Developer building explainable text classifiers.",
+        "Backend Developer passionate about clean database architectures.",
+        "Developer who loves solving complex graph theory curriculum models."
     ];
     let roleIndex = 0;
     let charIndex = 0;
@@ -159,63 +159,62 @@ document.addEventListener('DOMContentLoaded', () => {
     // Preconfigured response definitions (formatted monospaced technical feedback logs)
     const commandResponses = {
         '/help': `
-<span class="text-yellow">[SYSTEM HELP] AVAILABLE CONSOLE ROUTER CHANNELS:</span>
-  <span class="text-green">/about</span>       Explain engineering mindset and pipeline methodologies.
-  <span class="text-green">/skills</span>      Output categorized matrix table of languages and scores.
-  <span class="text-green">/projects</span>    Expose structural metrics data for built software dossiers.
-  <span class="text-green">/contact</span>     Access interactive telemetry copy actions and links.
-  <span class="text-green">/clear</span>       Purge terminal output history blocks.
+<span class="text-yellow">[TERMINAL SIMULATOR] AVAILABLE SHORTCUTS:</span>
+  <span class="text-green">/about</span>       Learn about my background and code philosophy.
+  <span class="text-green">/skills</span>      List my technical skills and competencies.
+  <span class="text-green">/projects</span>    Summarize my key software projects.
+  <span class="text-green">/contact</span>     Get my contact information and social links.
+  <span class="text-green">/clear</span>       Clear the terminal history.
         `,
         '/about': `
-<span class="text-cyan">[RETRIEVAL FOUND: Vrunda.Bio.Segment]</span>
+<span class="text-cyan">[SEARCH RESULTS: Vrunda's Profile]</span>
 --------------------------------------------------------------------------
-<span class="text-green">Title:</span> AI Systems & NLP Software Engineer
-<span class="text-green">Core Approach:</span> I engineer applications at the nexus of Large Language Models 
-and highly-structured backends. My design principles emphasize rigorous 
-data validation, determinism (preventing LLM hallucinations), and 
-maximizing structural efficiency. I avoid rounded corners, standard styles, 
-and bloated layers to guarantee lightning-fast indexing capabilities.
+<span class="text-green">Role:</span> Software &amp; AI Engineer
+<span class="text-green">My Focus:</span> I love building smart AI tools and reliable backend services. 
+I focus on writing clean, readable code where machine learning fits 
+naturally into robust backend pipelines, ensuring high performance 
+and data privacy.
 --------------------------------------------------------------------------
         `,
         '/skills': `
-<span class="text-cyan">[RETRIEVAL FOUND: Vrunda.Skills.Matrix]</span>
+<span class="text-cyan">[SEARCH RESULTS: Technical Skills]</span>
 --------------------------------------------------------------------------
-<span class="text-yellow">Category             Tech Competency                  Strength Level</span>
+<span class="text-yellow">Category             Skill Competency                 Level</span>
 --------------------------------------------------------------------------
-AI / NLP             Retrieval-Augmented Gen (RAG)    [ 94% - ADVANCED ]
-AI / NLP             Transformers (DistilBERT)        [ 90% - ADVANCED ]
-AI / NLP             Explainable AI (SHAP/LIME)       [ 96% - EXPERT   ]
-AI / NLP             ChromaDB Vector Store            [ 88% - ADVANCED ]
+Software &amp; AI        Retrieval-Augmented Gen (RAG)    [ 94% - ADVANCED ]
+Software &amp; AI        Transformers (DistilBERT)        [ 90% - ADVANCED ]
+Software &amp; AI        Explainable AI (SHAP/LIME)       [ 96% - EXPERT   ]
+Software &amp; AI        ChromaDB Vector Store            [ 88% - ADVANCED ]
 Backend &amp; Systems    Python (FastAPI, NetworkX)       [ 98% - EXPERT   ]
 Backend &amp; Systems    Odoo ERP Integration             [ 85% - ADVANCED ]
 Backend &amp; Systems    PostgreSQL / Index tuning        [ 87% - ADVANCED ]
-Workflows            Git / Automation / CLI           [ 95% - EXPERT   ]
+Workflows            Git / Version Control / CLI      [ 95% - EXPERT   ]
 --------------------------------------------------------------------------
         `,
         '/projects': `
-<span class="text-cyan">[RETRIEVAL FOUND: Vrunda.Project.Index]</span>
+<span class="text-cyan">[SEARCH RESULTS: Key Projects]</span>
 --------------------------------------------------------------------------
-<span class="text-green">[DOSSIER_01] Academic Curriculum Graph Analyzer</span>
-   Calculates academic program PCI/PSI indexes and identifies degree path 
-   rigidities. Built using network graph compilers in Python and NetworkX.
+<span class="text-green">[REF_01] Academic Curriculum Graph Analyzer</span>
+   A Python tool to map university curriculums, locate prerequisite 
+   bottlenecks, and help academic advisors find clear student paths.
    
-<span class="text-green">[DOSSIER_02] RAG-Based AI Academic Copilot</span>
-   A context-secured advisement advisor combining local ChromaDB indexing
-   with Ollama offline inference pipelines to prevent compliance failures.
+<span class="text-green">[REF_02] RAG-Based AI Academic Copilot</span>
+   A smart advisor chatbot combining ChromaDB vector search and local LLMs 
+   (Ollama) to give students accurate academic guidance.
 
-<span class="text-green">[DOSSIER_03] Multi-Model Sentiment Pipeline &amp; XAI</span>
-   Sentiment classification pipelines using DistilBERT transformers &amp; 
-   sequential BiLSTMs, explained mathematically using SHAP &amp; LIME importances.
+<span class="text-green">[REF_03] Multi-Model Sentiment Pipeline &amp; XAI</span>
+   A text classification service benchmarking DistilBERT, TF-IDF, and 
+   BiLSTMs, explained clearly with SHAP and LIME tools.
 
-<span class="text-green">[DOSSIER_04] Odoo Enterprise Library System</span>
-   Relational ERP module securing inventory workflows, fine checkout access 
-   controls, and concurrent query processing speeds.
+<span class="text-green">[REF_04] Odoo Enterprise Library System</span>
+   A custom Odoo library management system with clean relational databases, 
+   solid user access permissions, and optimized workflows.
 --------------------------------------------------------------------------
         `,
         '/contact': `
-<span class="text-cyan">[RETRIEVAL FOUND: Vrunda.Contact.Channels]</span>
+<span class="text-cyan">[SEARCH RESULTS: Contact Channels]</span>
 --------------------------------------------------------------------------
-Channel            Endpoint Address
+Channel            Link / Address
 --------------------------------------------------------------------------
 GitHub             <a href="https://github.com" target="_blank" style="color: #00e676;">https://github.com/vrunda</a>
 LinkedIn           <a href="https://linkedin.com" target="_blank" style="color: #00e676;">https://linkedin.com/in/vrunda</a>
@@ -251,8 +250,8 @@ Developer Mail     <a href="mailto:contact@vrunda.dev" style="color: #3377ff;">c
 
         if (cleanCmd.toLowerCase() === '/clear') {
             terminalBody.innerHTML = `
-                <p class="terminal-line text-muted">// Console history purged. Sandbox active.</p>
-                <p class="terminal-line text-yellow">// Type '/help' to list all supported console operations.</p>
+                <p class="terminal-line text-muted">// Sandbox cleared. Active and ready.</p>
+                <p class="terminal-line text-yellow">// Type '/help' to list all supported terminal operations.</p>
                 <br>
             `;
         } else if (commandResponses.hasOwnProperty(cleanCmd.toLowerCase())) {
